@@ -299,7 +299,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const app = express__WEBPACK_IMPORTED_MODULE_0__();
-__webpack_require__(/*! dotenv */ "dotenv").config();
+__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module 'dotenv'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())).config();
 app.use(body_parser__WEBPACK_IMPORTED_MODULE_2__["json"]());
 app.use('/api', _app_routes__WEBPACK_IMPORTED_MODULE_1__["default"]);
 const port = process.env.PORT;
@@ -394,7 +394,7 @@ var Topic;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/kunal/Projects/Proj/myapp/apps/api/src/main.ts */"./apps/api/src/main.ts");
+module.exports = __webpack_require__(/*! /Users/kunaltandon/Projects/Nx-Express-Angular/apps/api/src/main.ts */"./apps/api/src/main.ts");
 
 
 /***/ }),
@@ -407,17 +407,6 @@ module.exports = __webpack_require__(/*! /Users/kunal/Projects/Proj/myapp/apps/a
 /***/ (function(module, exports) {
 
 module.exports = require("body-parser");
-
-/***/ }),
-
-/***/ "dotenv":
-/*!*************************!*\
-  !*** external "dotenv" ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("dotenv");
 
 /***/ }),
 
