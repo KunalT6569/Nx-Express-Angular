@@ -1,11 +1,11 @@
-import { Data as DataModel } from '@myapp/api-models';
+import { IItem } from '@myapp/api-models';
 import { Item } from '../db/item.model';
 
-export class DataService {
-  static async saveItem(data: DataModel) {
+export class ItemService {
+  static async saveItems(data: IItem[]) {
     try {
-      const newItem = new Item(data);
-      await newItem.save();
+      const newItems = new Item(data);
+      await newItems.save();
     } catch (err) {
       throw err;
     }

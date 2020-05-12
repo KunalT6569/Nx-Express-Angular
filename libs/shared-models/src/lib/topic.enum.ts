@@ -1,6 +1,6 @@
 export enum Topic {
-    Array,
-    Closures,
-    Objects,
-    Scoping
+    A,
+    B,
+    C,
+    D
 }

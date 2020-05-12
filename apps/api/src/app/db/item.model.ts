@@ -1,16 +1,16 @@
-import { Data as DataModel } from '@myapp/api-models';
+import { IItem } from '@myapp/api-models';
 import { Topic } from '@myapp/shared-models';
 import { EnumToArray } from '@myapp/shared-lib';
 import * as mongoose from 'mongoose';
 
-type ItemType = DataModel & mongoose.Document;
+type ItemType = IItem & mongoose.Document;
 
 const itemSchema = new mongoose.Schema(
   {
-    question: { type: String, required: true },
-    answer: { type: String, required: true },
+    name: { type: String, required: true },
+    description: { type: String, required: true },
+    age: { type: Number, required: true },
     topic: { type: String, enum: [...EnumToArray(Topic)], default: null },
-    subTopic: { type: String, required: true },
     tags: [{ type: String }]
   },
   { timestamps: true }

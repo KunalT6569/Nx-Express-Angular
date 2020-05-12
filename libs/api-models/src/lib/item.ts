@@ -1,9 +1,9 @@
 import { Topic } from '@myapp/shared-models';
 
-export class Data {
-  question: string;
-  answer: string;
+export interface IItem {
+  name: string;
+  description: string;
+  age: number;
   topic: Topic;
-  subTopic: string;
   tags: Array<string>[];
 }
