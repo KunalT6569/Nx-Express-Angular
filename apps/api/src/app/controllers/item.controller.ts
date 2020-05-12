@@ -1,8 +1,8 @@
 import { Request, Response } from 'express';
-import { ItemService } from '../service/data.service';
+import { ItemService } from '../service/item.service';
 import { Item } from '../db/item.model';
 
-export class DataController {
+export class ItemController {
   static async getItems(req: Request, res: Response) {
     const allItems = await Item.find().exec();
     res.json(allItems);
