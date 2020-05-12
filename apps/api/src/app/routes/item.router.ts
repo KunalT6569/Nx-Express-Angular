@@ -4,7 +4,9 @@ import { itemPostValidator } from '../middlewares/validators/item.validator';
 
 const router = express.Router();
 
-router.get('/', DataController.getItem);
+router.get('/', DataController.getItems);
+router.get('/primary', DataController.getItemsFromPrimary);
+router.get('/secondary', DataController.getItemsFromSecondary);
 router.post('/', itemPostValidator, DataController.createItem);
 
 export default router;

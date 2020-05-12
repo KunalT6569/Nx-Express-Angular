@@ -4,8 +4,8 @@ import { Item } from '../db/item.model';
 export class ItemService {
   static async saveItems(data: IItem[]) {
     try {
-      const newItems = new Item(data);
-      await newItems.save();
+      const newItems = data.map(d => new Item(d));
+      await Item.insertMany(newItems);
     } catch (err) {
       throw err;
     }
