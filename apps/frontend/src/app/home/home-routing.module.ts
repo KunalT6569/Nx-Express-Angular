@@ -18,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, DashboardComponent],
   imports: [RouterModule.forChild(routes), SharedModule],
   exports: [RouterModule]
 })
